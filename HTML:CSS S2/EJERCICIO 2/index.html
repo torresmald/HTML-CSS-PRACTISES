@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailchimp Register</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="main">
+        <div><img src="./img/logo_mailchimp.svg" alt="Logotipo de Mailchimp" class="logo"></div>
+        <div>
+            <h1 class="title">Welcome to Mailchimp</h1>
+            <h2 class="subtitle">Find your people. Engage your customers. Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account?
+                <a href="#" class="login">Log in</a>
+            </h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>
+                        <label for="email">Email</label>
+                    </legend>
+                    <input type="email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Introduce tu email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <label for="username">Username</label>
+                    </legend>
+                    <input type="text" id="username" placeholder="Introduce un nombre de Usuario" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <label for="password">Password</label>
+                    </legend>
+                    <input type="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Elige una contraseña" required>
+                    <ul>
+                        <li class="decoration">One upercase character</li>
+                        <li class="decoration">One lowercase character</li>
+                        <li class="decoration">One number</li>
+                        <li class="decoration">One special character</li>
+                        <li class="decoration">8 characters minimum</li>
+                    </ul>
+                    <button class="button">Sign Up</button>
+                    <input type="checkbox" name="offers"> I don't want to receive emails about new Mailchimps products, best practises, or special offers.
+                </fieldset>
+                <p>By clicking the "Sing Up" button, you are creation a Mailchimp account, and you agree to Mailchimp's <a href="#" class="terms">Terms of Use</a> and <a href="#" class="terms">Privacy of Policy</a>
+                </p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

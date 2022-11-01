@@ -1,0 +1,51 @@
+@media all and (min-width:1200px){
+    .header{
+        border-bottom: none;
+        height: 40vh;
+        .headerContainer{
+            max-height: 100%;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 2fr 1fr;
+            .header__section{
+                grid-column: 1 /span 2;
+                grid-row: 1 /span 2;
+                max-height: 100%;
+                img{
+                    width: 66%;
+                }
+                &_wrapper{
+                    display: block;
+                    margin: 10px;
+                    h1{
+                        font-size: 37px;
+                        margin: 10px 0;
+                    }
+                    :nth-child(2){
+                        font-size: 25px;
+                        margin: 10px 0;
+                    }
+                    .hours{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .header__footer{
+                margin-top: 50px;
+                grid-column: 2;
+                grid-row: 2/3;
+                &_list{
+                    display: block;
+                    .listwrapper{
+                        margin: 10px 0;
+                        .linkItem{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}  
+
+    

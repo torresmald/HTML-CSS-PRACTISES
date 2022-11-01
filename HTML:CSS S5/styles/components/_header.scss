@@ -1,0 +1,54 @@
+
+.header{
+    height: 30vh;
+    font-family: $typefont;
+    @include greyLine;
+    &__section{
+        display: flex;
+        max-height: 200px;
+        img{
+            width: 70%;
+        }
+        &_wrapper{
+            display: grid;
+            gap: 10px;
+            grid-template-rows: 1fr 3fr 1fr;
+            margin: 5px;
+            max-height: 100%;
+                h1{ 
+                    font-size: 20px;
+                    font-weight: $titles;
+                }
+                p{
+                    font-size: 10px;
+                    color: $hourscolor;
+                }
+                .hours{
+                    align-self: flex-end;
+                }
+        }
+    }
+    &__footer{
+        margin-top: 30px;
+        &_list{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .listwrapper{
+                display: flex;
+                gap: 10px;
+            }
+            .fa-solid{
+                align-self: center;
+                font-size: 5px;
+            }
+            .linkItem{
+                text-decoration: none;
+                font-weight: $titles;
+                font-size: 8px;
+                color: black;
+            }
+        }
+    }
+}
+

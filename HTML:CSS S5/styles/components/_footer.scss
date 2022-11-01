@@ -1,0 +1,40 @@
+.footer{
+    margin-top: 40px;
+    &__container{
+        display: flex;
+        &_title{
+            font-size: $subtitles;
+            font-weight: $titles;
+            padding: 10px 20px 10px 0;
+        }
+        hr{
+            align-self: center;
+            flex: 1;
+            border: 1px solid black;
+        }
+    }
+    &__section{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .desktop{
+            display: none;
+        }
+        &_article{
+            width: 30%;
+            img {
+            width: 100%;
+            max-width: 100px;
+            }
+            .newsWrapper__title{
+                font-weight: $titles;
+                font-size: $articletitles;
+                padding: 10px 0;
+            }
+            .hours{
+                color: $hourscolor;
+            }
+        }
+    }
+}
+

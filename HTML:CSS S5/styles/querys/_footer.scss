@@ -1,0 +1,16 @@
+@media all and (min-width:1200px){
+    .footer{
+        &__section{
+            flex-wrap: nowrap;
+            gap: 10px;
+            &_article{
+                img{
+                    max-width: 100%;
+                }
+            }
+            .desktop{
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+$typefont:'Roboto', sans-serif;
+$titles: bolder;
+$hourscolor: grey;
+$subtitles: 30px;
+$articletitles: 20px;
+
+@mixin greyLine (){
+    border-bottom: 2px solid lightgrey;
+}

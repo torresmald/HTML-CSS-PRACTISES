@@ -1,0 +1,43 @@
+.logo{
+    width: 200px;
+}
+.title{
+    font-size: 80px;
+}
+.img{
+    width: 40px;
+}
+.cajagoogle{
+    background-color: #4285F4;
+    display: inline-block;
+}
+.cajafacebook{
+    background-color: #1877F2;
+    display: inline-block;
+}
+.login{
+    color: white;
+    text-decoration: none;
+}
+.enlaces{
+    text-decoration: none;
+    color: blue;
+}
+footer a{
+    text-decoration: none;
+    color: grey;
+}
+header{
+    display: flex;
+    
+}
+.log{
+        
+        margin-left: auto;
+}
+button{
+    border-radius: 20px;
+    border: 2px dashed grey;
+    background-color: white;
+    color: grey;
+}

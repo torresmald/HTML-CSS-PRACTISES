@@ -1,0 +1,62 @@
+body{
+    font-family: $fontFamily;
+    background-color: #ECECE9;
+}
+.header{
+    &__container{
+        margin: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_nav{
+            .header__login{
+                display: flex;
+                justify-content: flex-end;
+                &_link{
+                    text-decoration: none;
+                    color: $colorTextPrimary;
+                    padding: 0 20px;
+                    border-right: 1px solid $colorTextPrimary;       
+                }
+                .tel{
+                    border: none;
+                    font-size: 25px;
+                }
+                span{
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top:1px solid lightgrey ;
+        border-bottom: 1px solid lightgrey;
+        background-color: white;
+        padding: 0 60px;
+        &_burguer{
+            background-color: $colorBackgroundEci;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            p{
+                font-size: 12px;
+            }
+        }
+        &_list{
+            display: flex;
+            .listItem{
+                padding: 0 30px;
+                .listLink{
+                    text-decoration: none;
+                }
+                .listLink:visited{
+                    color: $colorTextPrimary;
+                }
+            }
+        }
+    }
+ }
+    
